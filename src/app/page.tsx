@@ -5,19 +5,6 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-      <div className="w-full absolute inset-0 ">
-        <SparklesCore
-          id="tsparticlesfullpage"
-          background="transparent"
-          particleSize={0}
-          speed={0.1}
-          minSize={0.6}
-          maxSize={1.4}
-          particleDensity={100}
-          className="w-full h-full"
-          particleColor="#FFFFFF"
-        />
-      </div>
       <div className="w-11/12 p-8  flex mx-auto h-screen flex-col justify-center">
         <div>
           <h3 className="text-2xl font-semibold ">
