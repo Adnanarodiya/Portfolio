@@ -1,4 +1,4 @@
-import { ChevronsDown, ChevronsRight } from "lucide-react";
+import { ChevronsDown, ChevronsRight, GraduationCap } from "lucide-react";
 import { SparklesCore } from "./components/aceternity/sparkles";
 import Image from "next/image";
 
@@ -18,7 +18,6 @@ export default function Home() {
           particleColor="#FFFFFF"
         />
       </div>
-
       <div className="w-11/12 p-8  flex mx-auto h-screen flex-col justify-center">
         <div>
           <h3 className="text-2xl font-semibold ">
@@ -64,6 +63,42 @@ export default function Home() {
             />
           </div>
         </div>
+      </div>
+      <div className="w-11/12 px-8 py-4 mx-auto flex items-center h-[calc(100vh-10rem)] flex-col relative mt-14">
+        <h2 className="text-4xl font-bold mb-8">Timeline</h2>
+        <div className="relative ">
+          <div className="border-4 border-white absolute rounded-3xl left-2/4 -translate-x-2/4 h-96 right-2"></div>
+          <div className="absolute p-4 bg-base-200 rounded-full left-2/4 -translate-x-2/4">
+            <GraduationCap />
+          </div>
+          <div className="absolute p-4 bg-base-200 rounded-full top-48 left-2/4 -translate-x-2/4">
+            <GraduationCap />
+          </div>
+          <div className="absolute p-4 bg-base-200 rounded-full top-[384px] left-2/4 -translate-x-2/4">
+            <GraduationCap />
+          </div>
+        </div>
+        <div className="card rounded-tl-3xl rounded-tr-none rounded-bl-none rounded-br-rounded-tr-3xl  w-64 bg-base-200  right-44 top-8">
+          <div className="card-body">
+            <h2 className="card-title">High School</h2>
+            <p>2019 - 2021</p>
+          </div>
+        </div>
+        <div className="card rounded-tr-3xl rounded-tl-none rounded-br-none rounded-bl-rounded-tr-3xl  w-64 bg-base-200  left-44 top-24">
+          <div className="card-body">
+            <h2 className="card-title  ">Uka Tarsadia University (CGPIT)</h2>
+            <p>2021 - 2024</p>
+          </div>
+        </div>
+        <div className="card rounded-tl-3xl rounded-tr-none rounded-bl-none rounded-br-rounded-tr-3xl  w-64 bg-base-200  right-44 top-36">
+          <div className="card-body">
+            <h2 className="card-title">Internship at</h2>
+            <p>EnactOn Technologies Private Limited</p>
+          </div>
+        </div>
+      </div>
+      <div className="w-11/12 px-8 py-4 mx-auto flex items-center h-[calc(100vh-10rem)] flex-col">
+        get in touch
       </div>
     </div>
   );

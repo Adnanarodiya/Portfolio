@@ -1,6 +1,6 @@
 import { Caveat } from "next/font/google";
 import React from "react";
-import { cn } from "../../../utils/cn";
+import { cn } from "@/utils/cn";
 const caveat = Caveat({ subsets: ["latin"] });
 
 export default function Navbar() {
