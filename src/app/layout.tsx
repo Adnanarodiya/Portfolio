@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html data-theme="dark" lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} min-h-fit`}>
         <div className="relative">
           <div className="w-full absolute inset-0 ">
             <SparklesCore
