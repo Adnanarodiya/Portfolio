@@ -11,7 +11,7 @@ export default function Home() {
       <Hero />
       <AboutComp />
       <FeaturedProject />
-      <Timeline />
+      {/* <Timeline /> */}
     </div>
   );
 }

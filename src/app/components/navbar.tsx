@@ -13,7 +13,7 @@ export default function Navbar() {
             Adnan Arodiya
           </a>
         </div>
-        <div className="dropdown dropdown-end">
+        <div className="dropdown dropdown-end md:hidden">
           <div tabIndex={0} role="button" className="btn btn-ghost rounded-btn">
             <Menu />
           </div>
@@ -35,7 +35,7 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <div className="flex-none hidden">
+        <div className="flex-none hidden md:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
               <a>Home</a>

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className=" w-11/12 p-8  flex mx-auto h-screen flex-col justify-center">
+    <div className=" w-11/12 p-8 top-0 flex mx-auto h-[90vh] flex-col justify-center">
       <div>
         <h3 className=" md:text-2xl font-semibold ">
           Hello, My name is Adnan Arodiya .
@@ -22,7 +22,7 @@ export default function Hero() {
           </Link>
         </div>
       </div>
-      <div className="w-100% flex justify-center  mt-12 animate-bounce">
+      <div className="w-100% mt-14 flex justify-center animate-bounce">
         <ChevronsDown size={60} />
       </div>
     </div>
