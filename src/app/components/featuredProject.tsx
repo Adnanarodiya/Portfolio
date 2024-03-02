@@ -14,7 +14,7 @@ export default function FeaturedProject() {
         </p>
         <div>
           <div className="md:flex md:gap-8 items-center">
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 w-3/5">
               <div>
                 <Image
                   src="/lapQuikMart.png"
@@ -34,7 +34,7 @@ export default function FeaturedProject() {
                 />
               </div>
             </div>
-            <div>
+            <div className="w-2/5">
               <h3 className="mt-5 font-bold md:text-lg lg:text-xl">QuikMart</h3>
               <p className=" md:w-64 lg:w-72  md:text-base lg:text-lg my-5 text-sm">
                 A front-end simulation of real-world e-commerce app (built with
@@ -58,28 +58,8 @@ export default function FeaturedProject() {
               </div>
             </div>
           </div>
-          <div className="mt-4 md:flex md:gap-8 items-center">
-            <div className="flex items-center gap-4">
-              <div>
-                <Image
-                  src="/lapFoodies.png"
-                  className=" z-auto"
-                  alt="Adnan Arodiya"
-                  height={500}
-                  width={500}
-                />
-              </div>
-              <div>
-                <Image
-                  src="/mobFoodies.png"
-                  className=" w-44 h-auto z-auto"
-                  alt="Adnan Arodiya"
-                  height={150}
-                  width={150}
-                />
-              </div>
-            </div>
-            <div>
+          <div className="mt-4 md:mt-8 md:flex md:gap-8 items-center">
+            <div className="w-2/5">
               <h3 className="mt-5 font-bold md:text-lg lg:text-xl ">Foodies</h3>
               <p className="md:w-64 lg:w-72  md:text-base lg:text-lg my-5 text-sm">
                 A front-end design just for fun nad learning about tailwindcss.
@@ -99,6 +79,26 @@ export default function FeaturedProject() {
                 >
                   <ExternalLink />
                 </Link>
+              </div>
+            </div>
+            <div className="flex items-center gap-4 w-3/5">
+              <div>
+                <Image
+                  src="/lapFoodies.png"
+                  className=" z-auto"
+                  alt="Adnan Arodiya"
+                  height={500}
+                  width={500}
+                />
+              </div>
+              <div>
+                <Image
+                  src="/mobFoodies.png"
+                  className=" w-44 h-auto z-auto"
+                  alt="Adnan Arodiya"
+                  height={150}
+                  width={150}
+                />
               </div>
             </div>
           </div>
