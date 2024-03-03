@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function FeaturedProject() {
   return (
     <div>
-      <div className="md:w-11/12 h-screen lg:h-[930px] px-8 py-4 md:mx-auto flex md:items-center flex-col relative mt-14 z-10">
+      <div className="md:w-11/12 sm:h-[900px] md:h-[600px] lg:h-[930px] px-8 py-4 md:mx-auto flex md:items-center flex-col relative mt-14 z-10">
         <h2 className="text-center mt-10 text-2xl md:text-4xl font-bold ">
           Featured Projects
         </h2>
@@ -14,7 +14,7 @@ export default function FeaturedProject() {
         </p>
         <div>
           <div className="md:flex md:gap-8 items-center">
-            <div className="flex items-center gap-4 w-3/5">
+            <div className="flex items-center gap-4 md:w-3/5">
               <div>
                 <Image
                   src="/lapQuikMart.png"
@@ -34,7 +34,7 @@ export default function FeaturedProject() {
                 />
               </div>
             </div>
-            <div className="w-2/5">
+            <div className="md:w-2/5">
               <h3 className="mt-5 font-bold md:text-lg lg:text-xl">QuikMart</h3>
               <p className=" md:w-64 lg:w-72  md:text-base lg:text-lg my-5 text-sm">
                 A front-end simulation of real-world e-commerce app (built with
@@ -58,8 +58,8 @@ export default function FeaturedProject() {
               </div>
             </div>
           </div>
-          <div className="mt-4 md:mt-8 md:flex md:gap-8 items-center">
-            <div className="w-2/5">
+          <div className="mt-4 md:mt-8 md:flex md:gap-8 items-center flex flex-col md:flex-row">
+            <div className="md:w-2/5 flex flex-col order-last md:order-first">
               <h3 className="mt-5 font-bold md:text-lg lg:text-xl ">Foodies</h3>
               <p className="md:w-64 lg:w-72  md:text-base lg:text-lg my-5 text-sm">
                 A front-end design just for fun nad learning about tailwindcss.
@@ -81,7 +81,7 @@ export default function FeaturedProject() {
                 </Link>
               </div>
             </div>
-            <div className="flex items-center gap-4 w-3/5">
+            <div className="flex  items-center gap-4 md:w-3/5">
               <div>
                 <Image
                   src="/lapFoodies.png"
