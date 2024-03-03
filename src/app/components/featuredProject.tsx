@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function FeaturedProject() {
   return (
     <div>
-      <div className="md:w-11/12 sm:h-[900px] md:h-[600px] lg:h-[930px] px-8 py-4 md:mx-auto flex md:items-center flex-col relative mt-14 z-10">
+      <div className="md:w-11/12 sm:h-[900px] md:h-[800px] lg:h-[1100px] px-8 py-4 md:mx-auto flex md:items-center flex-col relative mt-14 z-10">
         <h2 className="text-center mt-10 text-2xl md:text-4xl font-bold ">
           Featured Projects
         </h2>
