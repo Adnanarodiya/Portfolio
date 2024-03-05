@@ -16,7 +16,7 @@ export default function Timeline() {
           <GraduationCap />
         </div>
       </div>
-      <div className="card rounded-tr-3xl rounded-tl-none rounded-br-none rounded-bl-rounded-tr-3xl md:rounded-tl-3xl md:rounded-tr-none md:rounded-bl-none md:rounded-br-rounded-tr-3xl  w-3/4 left-16 md:right-96  md:w-64 bg-base-200   top-14 md:top-8 ">
+      <div className="card rounded-tr-3xl rounded-tl-none rounded-br-none rounded-bl-rounded-tr-3xl md:rounded-tl-3xl md:rounded-tr-none md:rounded-bl-none md:rounded-br-3xl  w-3/4 left-16 md:left-0 md:w-64 bg-base-200   top-14 md:top-8 ">
         <div className="card-body">
           <h2 className=" md:card-title text-base font-bold">High School</h2>
           <p className="text-sm md:text-base">2019 - 2021</p>

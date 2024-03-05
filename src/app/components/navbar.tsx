@@ -2,6 +2,7 @@ import { Caveat } from "next/font/google";
 import React from "react";
 import { cn } from "@/utils/cn";
 import { Menu } from "lucide-react";
+import Link from "next/link";
 const caveat = Caveat({ subsets: ["latin"] });
 
 export default function Navbar() {
@@ -25,11 +26,9 @@ export default function Navbar() {
               <a>Home</a>
             </li>
             <li>
-              <a>Projects</a>
+              <Link href="/project">Projects</Link>
             </li>
-            <li>
-              <a>Skills</a>
-            </li>
+            <li></li>
             <li>
               <a>Resume</a>
             </li>
