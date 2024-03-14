@@ -10,7 +10,7 @@ export default function Navbar() {
     <div className="sticky top-5 z-50">
       <div className="navbar bg-base-100 rounded-3xl w-11/12 mx-auto">
         <div className="flex-1">
-          <a className={cn("btn btn-ghost text-xl", caveat.className)}>
+          <a href="/" className={cn("btn btn-ghost text-xl", caveat.className)}>
             Adnan Arodiya
           </a>
         </div>
@@ -37,16 +37,16 @@ export default function Navbar() {
         <div className="flex-none hidden md:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Home</a>
+              <Link href="/">Home</Link>
             </li>
             <li>
-              <a>Projects</a>
+              <Link href="/project">Projects</Link>
             </li>
             <li>
-              <a>Skills</a>
+              <Link href="/skills">Skills</Link>
             </li>
             <li>
-              <a>Resume</a>
+              <a>Service</a>
             </li>
           </ul>
         </div>
