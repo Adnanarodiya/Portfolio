@@ -14,6 +14,7 @@ export const HoverEffect = ({
     title: string;
     description: string;
     link: string;
+    use: string[];
   }[];
   className?: string;
 }) => {
@@ -52,9 +53,12 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <CardImage>{item.image}</CardImage>
+            <CardImage src={item.image} />
             <div className="p-4">
               <CardTitle>{item.title}</CardTitle>
+              {item.use.map((i) => (
+                <CardTag key={i} src={i} />
+              ))}
               <CardDescription>{item.description}</CardDescription>
             </div>
           </Card>
@@ -86,10 +90,10 @@ export const Card = ({
 };
 export const CardImage = ({
   className,
-  children,
+  src,
 }: {
   className?: string;
-  children: React.ReactNode;
+  src: string;
 }) => {
   return (
     <h4
@@ -99,7 +103,7 @@ export const CardImage = ({
       )}
     >
       <Image
-        src={children}
+        src={src}
         className=""
         alt="Adnan Arodiya"
         height={400}
@@ -139,4 +143,14 @@ export const CardDescription = ({
       {children}
     </p>
   );
+};
+export const CardTag = ({
+  className,
+  src,
+}: {
+  className?: string;
+  src: string;
+}) => {
+  // eslint-disable-next-line @next/next/no-img-element
+  return <img className=" w-6" src={src} alt="" />;
 };

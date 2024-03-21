@@ -8,7 +8,7 @@ const caveat = Caveat({ subsets: ["latin"] });
 export default function Navbar() {
   return (
     <div className="sticky top-5 z-50">
-      <div className="navbar bg-base-100 rounded-3xl w-11/12 mx-auto">
+      <div className="navbar bg-base-100  inset-0 z-10 backdrop-blur-md bg-opacity-80 backdrop-saturate-200  rounded-3xl w-11/12 mx-auto">
         <div className="flex-1">
           <a href="/" className={cn("btn btn-ghost text-xl", caveat.className)}>
             Adnan Arodiya

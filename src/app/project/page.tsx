@@ -1,11 +1,16 @@
 import { HoverEffect } from "../components/aceternity/cardHoverEffect";
 
-export const projects = [
+const projects = [
   {
     image: "/QuikMart.png",
     title: "QuikMart",
     description: "A front-end simulation of a real-world e-commerce app",
     link: "https://quik-mart.vercel.app/",
+    use: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg",
+    ],
   },
   {
     image: "/dojoHelpDesk.png",
@@ -13,6 +18,11 @@ export const projects = [
     description:
       "A multinational technology company that specializes in Internet-related services and products.",
     link: "https://google.com",
+    use: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg",
+    ],
   },
   {
     image: "/todoApp.png",
@@ -20,6 +30,10 @@ export const projects = [
     description:
       "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
     link: "https://meta.com",
+    use: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    ],
   },
   {
     image: "/blogApp.png",
@@ -27,6 +41,11 @@ export const projects = [
     description:
       "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
     link: "https://amazon.com",
+    use: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg",
+    ],
   },
   {
     image: "/guessMyNumber.png",
@@ -34,6 +53,10 @@ export const projects = [
     description:
       "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
     link: "https://microsoft.com",
+    use: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    ],
   },
   {
     image: "/growThan.png",
@@ -41,6 +64,10 @@ export const projects = [
     description:
       "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
     link: "https://microsoft.com",
+    use: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    ],
   },
 ];
 
