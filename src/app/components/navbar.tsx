@@ -23,14 +23,16 @@ export default function Navbar() {
             className="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4"
           >
             <li>
-              <a>Home</a>
+              <Link href="/">Home</Link>
             </li>
             <li>
               <Link href="/project">Projects</Link>
             </li>
-            <li></li>
             <li>
-              <a>Resume</a>
+              <Link href="/skills">Skills</Link>
+            </li>
+            <li>
+              <Link href="/service">Service</Link>
             </li>
           </ul>
         </div>
