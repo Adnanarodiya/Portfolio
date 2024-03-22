@@ -56,9 +56,11 @@ export const HoverEffect = ({
             <CardImage src={item.image} />
             <div className="p-4">
               <CardTitle>{item.title}</CardTitle>
-              {item.use.map((i) => (
-                <CardTag key={i} src={i} />
-              ))}
+              <div className="flex gap-3 my-2">
+                {item.use.map((i) => (
+                  <CardTag key={i} src={i} />
+                ))}
+              </div>
               <CardDescription>{item.description}</CardDescription>
             </div>
           </Card>
@@ -144,13 +146,7 @@ export const CardDescription = ({
     </p>
   );
 };
-export const CardTag = ({
-  className,
-  src,
-}: {
-  className?: string;
-  src: string;
-}) => {
+export const CardTag = ({ src }: { className?: string; src: string }) => {
   // eslint-disable-next-line @next/next/no-img-element
   return <img className=" w-6" src={src} alt="" />;
 };
