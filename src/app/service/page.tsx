@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function page() {
   return (
-    <div className="w-11/12 p-8 top-0 mt-9 mx-auto  h-[calc(100vh+100px)]">
+    <div className="w-11/12 p-8 top-0 mt-9 mx-auto md:h-[calc(100vh+150px)]">
       <div className="flex flex-col justify-center items-center">
         <div>
           <h3 className="font-bold text-3xl">Hire me!</h3>
@@ -18,13 +18,13 @@ export default function page() {
         </div>
       </div>
       <div className="flex justify-center">
-        <p className="w-2/4 mt-8 text-lg text-center ">
+        <p className="xl:w-2/4 mt-8 xl:text-lg text-center ">
           Hey there I am Adnan Arodiya! Welcome to our Website Building Service!
           I'm the developer who will create awesome websites just for you. Let's
           work together to make a website that's perfect for what you need!
         </p>
       </div>
-      <div className="flex  justify-evenly">
+      <div className="flex flex-col md:flex-row justify-evenly md:gap-8">
         <div className="mt-8 flex gap-8">
           <div className=" w-full relative max-w-xs">
             <div className=" " />

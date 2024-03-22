@@ -7,7 +7,7 @@ export default function Data() {
   const [hoveredSkill, setHoveredSkill] = React.useState<string | null>(null);
 
   return (
-    <div className="w-11/12 p-8 top-0 flex mx-auto justify-center flex-wrap h-[calc(100vh-70px)] items-center gap-10">
+    <div className=" w-11/12 p-8 top-0 flex mx-auto justify-center flex-wrap xl:h-[calc(100vh-70px)] items-center gap-10">
       {SkillsData.map((skill) => (
         <a
           href={skill.url}
