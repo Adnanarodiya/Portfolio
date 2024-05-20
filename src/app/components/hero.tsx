@@ -20,15 +20,39 @@ export default function Hero() {
       text: "is",
     },
     {
-      text: "Adnan Arodiya .",
+      text: "Adnan.",
+      className: "text-blue-500 dark:text-blue-500",
+    },
+  ];
+  const fullName = [
+    {
+      text: "Hello",
+    },
+    {
+      text: ",",
+    },
+    {
+      text: "My",
+    },
+    {
+      text: "name",
+    },
+    {
+      text: "is",
+    },
+    {
+      text: "Adnan Arodiya.",
       className: "text-blue-500 dark:text-blue-500",
     },
   ];
   return (
     <div className=" w-11/12 p-8 top-0 flex mx-auto h-[90vh] flex-col justify-center">
       <div>
-        <h1>
-          <TypewriterEffectSmooth words={words} />
+        <h1 className="md:hidden">
+          <TypewriterEffectSmooth words={words} className="w-full flex" />
+        </h1>
+        <h1 className="hidden md:flex">
+          <TypewriterEffectSmooth words={fullName} className="w-full flex" />
         </h1>
         <h1 className="text-4xl md:text-6xl font-bold mt-4 md:mt-8">
           I build frontend stuffs.
