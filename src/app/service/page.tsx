@@ -51,9 +51,9 @@ export default function page() {
                   exceed expectations and deliver outstanding results.
                 </p>
 
-                <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
+                {/* <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
                   Contact
-                </button>
+                </button> */}
 
                 {/* Meaty part - Meteor effect */}
                 <Meteors number={20} />
@@ -87,9 +87,9 @@ export default function page() {
                   security.
                 </p>
 
-                <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
+                {/* <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
                   Contact
-                </button>
+                </button> */}
 
                 {/* Meaty part - Meteor effect */}
                 <Meteors number={20} />
