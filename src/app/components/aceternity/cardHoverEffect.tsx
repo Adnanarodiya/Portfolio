@@ -14,6 +14,7 @@ export const HoverEffect = ({
     title: string;
     description: string;
     link: string;
+    type: string;
     use: string[];
   }[];
   className?: string;
@@ -62,6 +63,11 @@ export const HoverEffect = ({
                 ))}
               </div>
               <CardDescription>{item.description}</CardDescription>
+              {item.type === "Paused" ? (
+                <div className="absolute bottom-0 left-0 right-0 mb-4 bg-red-500 bg-opacity-50 text-white p-2 text-center  backdrop-blur-md">
+                  Project paused due to Supabase limitation.
+                </div>
+              ) : null}
             </div>
           </Card>
         </Link>
