@@ -2,6 +2,17 @@ import { HoverEffect } from "../components/aceternity/cardHoverEffect";
 
 const projects = [
   {
+    image: "/TMX.png",
+    title: "TMX",
+    description: "A front-end design i created for practical interview",
+    link: "https://tmx-two.vercel.app/",
+    type: "running",
+    use: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    ],
+  },
+  {
     image: "/QuikMart.png",
     title: "QuikMart",
     description: "A front-end simulation of a real-world e-commerce app",
