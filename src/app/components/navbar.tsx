@@ -1,67 +1,64 @@
+"use client"
 import { Caveat } from 'next/font/google';
-import React from 'react';
+import React, { useState } from 'react';
 import { cn } from '@/utils/cn';
-import { Menu } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
+
 const caveat = Caveat({ subsets: ['latin'] });
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+
+  const navItems = [
+    { href: '/', label: 'Home' },
+    { href: '/project', label: 'Projects' },
+    { href: '/skills', label: 'Skills' },
+    { href: '/service', label: 'Service' },
+    { href: '/fun-game', label: 'Fun Game' },
+  ];
+
   return (
     <div className='sticky top-5 z-50'>
-      <div className='navbar bg-base-100  inset-0 z-10 backdrop-blur-md bg-opacity-80 backdrop-saturate-200  rounded-3xl w-11/12 mx-auto'>
+      <div className='navbar bg-base-100 inset-0 z-10 backdrop-blur-md bg-opacity-80 backdrop-saturate-200 rounded-3xl w-11/12 mx-auto'>
         <div className='flex-1'>
-          <a
+          <Link
             href='/'
             className={cn('btn btn-ghost text-4xl', caveat.className)}
           >
             Adnan Arodiya
-          </a>
+          </Link>
         </div>
-        <div className='dropdown dropdown-end md:hidden'>
-          <div tabIndex={0} role='button' className='btn btn-ghost rounded-btn'>
-            <Menu />
-          </div>
-          <ul
-            tabIndex={0}
-            className='menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4'
-          >
-            <li>
-              <Link href='/'>Home</Link>
-            </li>
-            <li>
-              <Link href='/project'>Projects</Link>
-            </li>
-            <li>
-              <Link href='/skills'>Skills</Link>
-            </li>
-            <li>
-              <Link href='/service'>Service</Link>
-            </li>
-            <li>
-              <Link href='/fun-game'>Fun Game</Link>
-            </li>
-          </ul>
-        </div>
-        <div className='flex-none hidden md:flex'>
+        <div className='flex-none hidden md:block'>
           <ul className='menu menu-horizontal px-1 gap-4'>
-            <li>
-              <Link href='/'>Home</Link>
-            </li>
-            <li>
-              <Link href='/project'>Projects</Link>
-            </li>
-            <li>
-              <Link href='/skills'>Skills</Link>
-            </li>
-            <li>
-              <Link href='/service'>Service</Link>
-            </li>
-            <li>
-              <Link href='/fun-game'>Fun Game</Link>
-            </li>
+            {navItems.map((item) => (
+              <li key={item.href}>
+                <Link href={item.href}>{item.label}</Link>
+              </li>
+            ))}
           </ul>
+        </div>
+        <div className='flex-none md:hidden'>
+          <button onClick={toggleMenu} className='btn btn-ghost btn-circle'>
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
       </div>
+      {isOpen && (
+        <div className='md:hidden mt-2 w-11/12 mx-auto'>
+          <ul className='menu bg-base-100 rounded-box w-full p-2 shadow-lg backdrop-blur-md bg-opacity-80 backdrop-saturate-200'>
+            {navItems.map((item) => (
+              <li key={item.href}>
+                <Link href={item.href} onClick={toggleMenu}>
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 }
