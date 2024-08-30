@@ -37,6 +37,9 @@ export default function Navbar() {
             <li>
               <Link href='/service'>Service</Link>
             </li>
+            <li>
+              <Link href='/fun-game'>Fun Game</Link>
+            </li>
           </ul>
         </div>
         <div className='flex-none hidden md:flex'>
@@ -52,6 +55,9 @@ export default function Navbar() {
             </li>
             <li>
               <Link href='/service'>Service</Link>
+            </li>
+            <li>
+              <Link href='/fun-game'>Fun Game</Link>
             </li>
           </ul>
         </div>

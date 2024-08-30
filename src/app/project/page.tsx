@@ -2,6 +2,33 @@ import { HoverEffect } from "../components/aceternity/cardHoverEffect";
 
 const projects = [
   {
+    image: "/IssacLord.png",
+    title: "Issac Lord",
+    description: "Currently working on developing a user-friendly e-commerce platform for Isaac Lord, featuring product browsing, advanced search, and seamless shopping cart functionality using modern web technologies",
+    link: "https://isaac-puce.vercel.app/",
+    type: "running",
+    use: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/magento/magento-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cpanel/cpanel-original.svg",
+
+    ],
+  },
+  {
+    image: "/QuikMart.png",
+    title: "QuikMart",
+    description: "Built a dynamic e-commerce website for seamless online shopping. Utilizes Supabase for real-time database management. All data is dynamically updated.",
+    link: "https://quik-mart.vercel.app/",
+    type: "running",
+    use: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg",
+    ],
+  },
+  {
     image: "/TMX.png",
     title: "TMX",
     description: "A front-end design i created for practical interview",
@@ -10,18 +37,6 @@ const projects = [
     use: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-    ],
-  },
-  {
-    image: "/QuikMart.png",
-    title: "QuikMart",
-    description: "A front-end simulation of a real-world e-commerce app",
-    link: "https://quik-mart.vercel.app/",
-    type: "running",
-    use: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg",
     ],
   },
   {
