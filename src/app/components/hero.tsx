@@ -1,58 +1,13 @@
 import { ChevronsDown } from 'lucide-react';
 import Link from 'next/link';
-import { TypewriterEffectSmooth } from './aceternity/typewriter-effect';
+import ScrollButton from './scrollButton';
 
 export default function Hero() {
-  const words = [
-    {
-      text: 'Hello',
-    },
-    {
-      text: ',',
-    },
-    {
-      text: 'My',
-    },
-    {
-      text: 'name',
-    },
-    {
-      text: 'is',
-    },
-    {
-      text: 'Adnan.',
-      className: 'text-blue-500',
-    },
-  ];
-  const fullName = [
-    {
-      text: 'Hello',
-    },
-    {
-      text: ',',
-    },
-    {
-      text: 'My',
-    },
-    {
-      text: 'name',
-    },
-    {
-      text: 'is',
-    },
-    {
-      text: 'Adnan Arodiya.',
-      className: 'text-blue-500',
-    },
-  ];
   return (
-    <div className=' w-11/12 p-8 top-0 flex mx-auto h-[90vh] flex-col justify-center'>
+    <div className='w-11/12 p-8 top-0 flex mx-auto h-[90vh] flex-col justify-center'>
       <div>
-        <h1 className='md:hidden'>
-          <TypewriterEffectSmooth words={words} className='w-full flex' />
-        </h1>
-        <h1 className='hidden md:flex'>
-          <TypewriterEffectSmooth words={fullName} className='w-full flex' />
+        <h1 className='text-2xl font-bold md:text-4xl'>
+          Hello,I am <span className='text-blue-500'> Adnan Arodiya</span>
         </h1>
         <h1 className='text-4xl md:text-6xl font-bold mt-4 md:mt-8'>
           I build frontend stuffs.
@@ -70,9 +25,7 @@ export default function Hero() {
           </Link>
         </div>
       </div>
-      <div className='w-100% mt-14 flex justify-center animate-bounce'>
-        <ChevronsDown size={60} />
-      </div>
+      <ScrollButton />
     </div>
   );
 }
